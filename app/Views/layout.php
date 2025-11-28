@@ -375,14 +375,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // Supprimer tous les Pokémon capturés quand la page se ferme
-        window.addEventListener('beforeunload', function() {
-            // Envoyer une requête pour supprimer tous les produits
-            navigator.sendBeacon('/products/deleteAll', new FormData());
-        });
-    </script>
 </body>
 </html>
 
