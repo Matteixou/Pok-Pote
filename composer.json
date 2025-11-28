@@ -1,14 +1,32 @@
 {
-  "name": "school/mini-mvc",
-  "description": "Mini projet MVC pédagogique (léger)",
+  "name": "imed92/poké-mvc",
+  "description": "Application interactive Pokémon avec architecture MVC en PHP - Capture, entraîne et combats de Pokémon avec système de compatibilité et tournois",
   "type": "project",
-  "require": {},
+  "keywords": ["pokémon", "mvc", "php", "interactive", "web-app", "combat", "game"],
+  "homepage": "https://github.com/imed92/mini_mvc",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Imed92",
+      "email": "contact@example.com",
+      "homepage": "https://github.com/imed92",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {},
   "autoload": {
     "psr-4": {
       "Mini\\": "app/"
     }
   },
   "minimum-stability": "stable",
-  "license": "MIT"
+  "prefer-stable": true,
+  "scripts": {
+    "start": "php -S localhost:8000 -t public/",
+    "serve": "php -S localhost:8000 -t public/"
+  }
 }
 
